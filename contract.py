@@ -42,7 +42,7 @@ Greeter = W3.eth.contract(abi=abi, bytecode=bytecode)
 
 nonce = W3.eth.getTransactionCount(address1)
 #diagnostics
-#print(nonce)
+print("nonce line 45",nonce)
 # Submit the transaction that deploys the contract
 tx_dict = Greeter.constructor().buildTransaction({
   'chainId': 3,
@@ -72,7 +72,7 @@ while tx_receipt is None and (count < 30):
 if tx_receipt is None:
   print (" {'status': 'failed', 'error': 'timeout'} ")
 #diagnostics
-#print (tx_receipt)
+print ("tx_receipt line 75", tx_receipt)
 
 
 print("Contract address is:",tx_receipt.contractAddress)
