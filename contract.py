@@ -82,9 +82,7 @@ greeter = W3.eth.contract(
   abi=abi
 )
 
-
-#print("Output from greet()")
-#print(greeter.functions.greet().call())
+print(greeter.functions.greet().call())
 
 studentnumber = 10574498
 studentname= 'John'
