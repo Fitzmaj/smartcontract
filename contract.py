@@ -83,8 +83,8 @@ greeter = W3.eth.contract(
 )
 
 
-print("Output from greet()")
-print(greeter.functions.greet().call())
+#print("Output from greet()")
+#print(greeter.functions.greet().call())
 
 
 
