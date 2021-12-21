@@ -86,10 +86,11 @@ greeter = W3.eth.contract(
 #print("Output from greet()")
 #print(greeter.functions.greet().call())
 
-
+studentnumber = 10574498
+studentname= 'John'
 
 nonce = W3.eth.getTransactionCount(address1)
-tx_dict = greeter.functions.setGreeting('Hello from the contract deployed by John with student number 10574498').buildTransaction({
+tx_dict = greeter.functions.setGreeting('Hello from the contract deployed by ' studentname, ' with student number ' studentnumber).buildTransaction({
   'chainId': 3,
   'gas': 1400000,
   'gasPrice': w3.toWei('40', 'gwei'),
